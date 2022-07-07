@@ -34,16 +34,14 @@ body {
 }
 /* style dla nagłówka */
 header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 .nav-header {
   display: flex;
   height: 80px;
-  background-color: var(--white)
+  background-color: var(--white);
   padding-left: 15px;
   align-items: center;
-  border-bottom; 4px solid red
-  
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -113,6 +111,9 @@ h1 {
   text-align: center;
   border-radius: 4px;
 }
+.orderservice:hover {
+  cursor: var(--hoovercursor);
+}
 .navlink:hover,
 .navlink:focus {
   color: var(--secondcolor);
@@ -126,10 +127,11 @@ h1 {
   display: flex;
   gap: 30px;
   justify-content: center;
+  width: 1170px;
 }
 .sections {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  /* padding-bottom: 94px; */
 }
 .list-of-adv h3 {
   width: 270px;
@@ -162,13 +164,21 @@ h2 {
   width: 1600px;
   height: 648px;
   background-color: #f5f4fa;
-  align-items: center;
   padding-top: 92px;
 }
 .ourteam-list {
   display: flex;
+  gap: 30px;
+  justify-content: center;
 }
-
+.teamcard {
+  height: 368px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin: 0;
+}
 .footercontact:hover,
 .footercontact:focus {
   color: var(--secondcolor);
@@ -183,7 +193,7 @@ h2 {
   text-decoration: none;
 }
 .contact:hover,
-.navlink:focus {
+.contact:focus {
   color: var(--secondcolor);
   cursor: var(--hoovercursor);
 }
@@ -215,6 +225,7 @@ address {
   font-size: 14px;
   line-height: 1.71;
   color: var(--white);
+  font-style: normal;
 }
 .footercontact {
   font-size: 14px;
@@ -227,15 +238,21 @@ address {
   line-height: 1.6;
   text-align: center;
   background-color: #f5f4fa;
+  border: none;
   border-radius: 4px;
-  width: 121px;
-  height: 38px;
+  margin-top: 94px;
+  width: 117px;
 }
 .buttons:hover,
-.buttons.focus {
+.buttons:focus {
   color: var(--white);
   background-color: var(--secondcolor);
   cursor: var(--hoovercursor);
+}
+.filtrsection {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
 }
 .workdone {
   font-weight: var(--fontW7);
@@ -247,4 +264,42 @@ address {
   font-size: 16px;
   line-height: 1.9;
   color: var(--thirdcolor);
+}
+.footer {
+  background-color: var(--bannercolor);
+  height: 252px;
+  width: 1600px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+}
+h4 a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.studio2 {
+  color: var(--white);
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 92px;
+  margin-top: 52px;
+}
+.portfolio-list {
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  margin: 0;
+  padding: 0;
+}
+.portfolio-desc p {
+  margin: 15px;
 }
