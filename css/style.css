@@ -1,19 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-*  {
-  max-width: 1200px;
+.container {
+  width: 1200px;
   margin: auto;
   padding: auto;
-  justify-content: center;
-  align-items: center;
 }
 :root {
   --maincolor: #212121;
   --secondcolor: #2196f3;
   --thirdcolor: #757575;
-  --backgroundcolor: #ececec;
+  --backgroundcolor: #ffffff;
   --black: black;
   --white: #ffffff;
   --logocolor1: #2196f3;
@@ -21,67 +15,87 @@
   --fontW7: 700;
   --fontW5: 500;
   --hoovercursor: pointer;
+  --bannercolor: #2f303a;
 }
-
+.bodyclass {
+  margin-left: auto;
+  margin-right: auto;
+}
 body {
   font-family: “Roboto”, sans-serif;
   font-style: normal;
   font-weight: 400;
   color: var(--maincolor);
   background-color: var(--backgroundcolor);
-  width: 1600px;
   letter-spacing: 0.03em;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
-ul {
-  list-style: none;
+/* style dla nagłówka */
+header {
+  border-bottom: 1px solid #ECECEC;
 }
-h4 a {
+.nav-header {
+  display: flex;
+  height: 80px;
+  background-color: var(--white)
+  padding-left: 15px;
+  align-items: center;
+  border-bottom; 4px solid red
+  
+}
+.logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  width: 145px;
+  height: 31px;
+  display: block;
 }
-.web {
-  color: var(--logocolor1);
-}
-.studio {
-  color: var(--logocolor2);
+.navigationlinks {
+  display: flex;
+  gap: 46px;
+  padding-left: 93px;
 }
 .navlink {
   font-weight: var(--fontW5);
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: var(--maincolor);
+  text-decoration: none;
+  display: block;
 }
-.navlink:hover,
-.navlink:focus {
-  color: var(--secondcolor);
-  cursor: var(--hoovercursor);
+.header-contacts {
+  display: flex;
+  gap: 50px;
+  padding-left: 372px;
 }
-.footercontact:hover,
-.footercontact:focus {
-  color: var(--secondcolor);
-  cursor: var(--hoovercursor);
+ul {
+  list-style: none;
 }
-.contact {
-  font-weight: var(--fontW5);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--thirdcolor);
+
+.web {
+  color: var(--logocolor1);
 }
-.contact:hover,
-.navlink:focus {
-  color: var(--secondcolor);
-  cursor: var(--hoovercursor);
+.studio {
+  color: var(--logocolor2);
+}
+/* koniec style nagłowka */
+/* style dla bannery i buttona */
+.mainbanner {
+  width: 1600px;
+  height: 600px;
+  background-color: var(--bannercolor);
+  text-align: center;
+  padding: 200px 452px 280px 452px;
 }
 h1 {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  text-align: center;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white);
@@ -96,8 +110,84 @@ h1 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--secondcolor);
   color: var(--white);
+  text-align: center;
+  border-radius: 4px;
 }
-.advantages {
+.navlink:hover,
+.navlink:focus {
+  color: var(--secondcolor);
+  cursor: var(--hoovercursor);
+}
+/* koniec styli dla banneru */
+
+/* style pierwsza sekcja */
+
+.list-of-adv {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.sections {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.list-of-adv h3 {
+  width: 270px;
+}
+.list-of-adv .description {
+  width: 270px;
+}
+
+/* koniec styli pierwsza sekcja */
+
+/* style druga sekcja */
+h2 {
+  font-weight: var(--fontW7);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.whatwedo {
+  display: flex;
+  gap: 30px;
+  margin-top: 92px;
+  margin-bottom: 94px;
+}
+/* koniec druga sekcja */
+
+/* trzecia sekcja */
+
+.ourteam {
+  width: 1600px;
+  height: 648px;
+  background-color: #f5f4fa;
+  align-items: center;
+  padding-top: 92px;
+}
+.ourteam-list {
+  display: flex;
+}
+
+.footercontact:hover,
+.footercontact:focus {
+  color: var(--secondcolor);
+  cursor: var(--hoovercursor);
+}
+.contact {
+  font-weight: var(--fontW5);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--thirdcolor);
+  text-decoration: none;
+}
+.contact:hover,
+.navlink:focus {
+  color: var(--secondcolor);
+  cursor: var(--hoovercursor);
+}
+h3 {
   font-weight: var(--fontW7);
   font-size: 14px;
   line-height: 1.14;
@@ -108,12 +198,7 @@ h1 {
   line-height: 1.7;
   color: var(--thirdcolor);
 }
-h2 {
-  font-weight: var(--fontW7);
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
+
 .name {
   font-weight: var(--fontW5);
   font-size: 16px;
