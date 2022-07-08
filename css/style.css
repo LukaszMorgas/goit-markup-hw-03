@@ -291,6 +291,8 @@ h4 a {
   justify-content: center;
   margin-bottom: 92px;
   margin-top: 52px;
+  padding-left: 215px;
+  padding-right: 215px;
 }
 .portfolio-list {
   width: 370px;
