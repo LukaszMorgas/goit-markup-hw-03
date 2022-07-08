@@ -231,6 +231,7 @@ address {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .buttons {
   font-weight: var(--fontW5);
