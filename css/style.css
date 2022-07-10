@@ -160,8 +160,7 @@ h2 {
 
 /* trzecia sekcja */
 
-.ourteam {
-  width: 1600px;
+.sections-2 {
   height: 648px;
   background-color: #f5f4fa;
   padding-top: 92px;
@@ -170,6 +169,7 @@ h2 {
   display: flex;
   gap: 30px;
   justify-content: center;
+  padding: 0;
 }
 .teamcard {
   height: 368px;
@@ -293,8 +293,7 @@ h4 a {
   justify-content: center;
   margin-bottom: 92px;
   margin-top: 52px;
-  padding-left: 215px;
-  padding-right: 215px;
+  padding: 0;
 }
 .portfolio-list {
   width: 370px;
